@@ -8,7 +8,7 @@ How to set up a local copy of Have-I-Been-Pwned's password checking service
 
 In order to get a `pass.txt` you can use any dictionary or you can pull it out of Hashcat.
 
-You can do it one of two ways based on what data you want. IF you wnat to know just what bad passwords exist in the domain you can do it this way:
+You can do it one of two ways based on what data you want. IF you want to know just what bad passwords exist in the domain you can do it this way:
 - Step 1: `hashcat.exe -m1000 demodomain.ntds --show > cracked.txt`
 - Step 2:  Then use [convert-hashcat-pass.rb](convert-hashcat-pass.rb) `ruby convert-hashcat-pass.rb > pass.txt`
 
